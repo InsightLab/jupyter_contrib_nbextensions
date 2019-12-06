@@ -46,7 +46,7 @@ define([
         },
         relative_timing_update_period: 10,
         template: {
-            executed: 'executed in ${duration}, finished ${end_time}',
+            executed: 'INSIGHTLAB executed in ${duration}, finished ${end_time}',
             queued: 'execution queued ${start_time}',
         },
     };
