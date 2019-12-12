@@ -60,7 +60,7 @@ define([
             new_cell.set_text(`# Introduction
                 State notebook purpose here`)
             // new_cell.set_text(code);
-            // new_cell.focus_cell();
+            new_cell.focus_cell();
 
             $("option#snippet_header").prop("selected",true);
         }
