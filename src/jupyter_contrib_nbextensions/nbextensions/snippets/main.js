@@ -55,7 +55,7 @@ define([
 
         if (selected_snippet.attr("name") != 'header') {
             var code = selected_snippet.attr("code");
-            var new_cell = Jupyter.notebook.insert_cell_above('markdown');
+            var new_cell = Jupyter.notebook.insert_cell_above('code');
             new_cell.set_text(code);
             new_cell.focus_cell();
 
