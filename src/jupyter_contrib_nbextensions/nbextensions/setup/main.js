@@ -6,7 +6,7 @@ define(['base/js/namespace', 'base/js/events'], function (Jupyter, events) {
     Jupyter.notebook.insert_cell_at_index('markdown', 1)
       .set_text(`
 - Nome do desenvolvedor: 
-    - 
+    - .
 - Data: 
     - 
 - Projeto: 
