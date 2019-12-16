@@ -3,9 +3,6 @@ define(['base/js/namespace', 'base/js/events'], function (Jupyter, events) {
   var setUp = function () {
     Jupyter.notebook.insert_cell_at_index('markdown', 0)
       .set_text(`# Informações Gerais`)
-    Jupyter.notebook.insert_cell_at_index('markdown', 1)
-      .set_text(`- Nome do desenvolvedor:
-  -.`)
 
     Jupyter.notebook.insert_cell_at_index('markdown', 2).set_text(`### Imports
 Import libraries and write settings here.`)
