@@ -2,18 +2,20 @@ define(['base/js/namespace', 'base/js/events'], function (Jupyter, events) {
   // Template cells including markdown and imports
   var setUp = function () {
     Jupyter.notebook.insert_cell_at_index('markdown', 0)
-      .set_text(`# Informações Gerais
-- Nome do desenvolvedor:
+      .set_text(`# Informações Gerais')
+    Jupyter.notebook.insert_cell_at_index('markdown', 1)
+      .set_text(`- Nome do desenvolvedor:
 - Data:
 - Projeto:
 - Aplicação:
 - Linguagem:
 - Resumo da aplicação:
-- Outras observações:`)
+- Outras observações:')
+
     Jupyter.notebook.insert_cell_at_index('markdown', 1).set_text(`### Imports
 Import libraries and write settings here.`)
     // Define imports and settings
-    Jupyter.notebook.insert_cell_at_index('code', 2)
+    Jupyter.notebook.insert_cell_at_index('code', 3)
       .set_text(`# Data manipulation
 import pandas as pd
 import numpy as np
@@ -44,12 +46,12 @@ init_notebook_mode(connected=True)
 import cufflinks as cf
 cf.go_offline(connected=True)
 cf.set_config_file(theme='white')`)
-    Jupyter.notebook.insert_cell_at_index('markdown', 3)
+    Jupyter.notebook.insert_cell_at_index('markdown', 4)
       .set_text(`# Analysis/Modeling
 Do work here`)
-    Jupyter.notebook.insert_cell_at_index('markdown', 4).set_text(`# Results
+    Jupyter.notebook.insert_cell_at_index('markdown', 5).set_text(`# Results
 Show graphs and stats here`)
-    Jupyter.notebook.insert_cell_at_index('markdown', 5)
+    Jupyter.notebook.insert_cell_at_index('markdown', 6)
       .set_text(`# Conclusions and Next Steps
 Summarize findings here`)
     // Run all cells
