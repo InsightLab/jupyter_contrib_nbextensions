@@ -59,7 +59,7 @@ Summarize findings here`)
   function load_ipython_extension () {
     // Add default cells for new notebook
     if (Jupyter.notebook.get_cells().length === 1) {
-      setTimeout(setUp, 500)
+      setTimeout(setUp, 2000)
     } else {
       promptName()
     }
