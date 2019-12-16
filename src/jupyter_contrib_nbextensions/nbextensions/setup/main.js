@@ -12,15 +12,9 @@ define(['base/js/namespace', 'base/js/events'], function (Jupyter, events) {
 - Projeto: 
     - 
 - Aplicação: 
-    - 
-- Linguagem: 
-    - 
-- Resumo da aplicação: 
-    - -
-- Outras observações: 
-    - -`)
+    - `)
 
-    Jupyter.notebook.insert_cell_at_index('markdown', 1).set_text(`### Imports
+    Jupyter.notebook.insert_cell_at_index('markdown', 2).set_text(`### Imports
 Import libraries and write settings here.`)
     // Define imports and settings
     Jupyter.notebook.insert_cell_at_index('code', 3)
