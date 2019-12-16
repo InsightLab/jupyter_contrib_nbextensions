@@ -2,7 +2,7 @@ define(['base/js/namespace', 'base/js/events'], function (Jupyter, events) {
   // Template cells including markdown and imports
   var setUp = function () {
     Jupyter.notebook.insert_cell_at_index('markdown', 0)
-      .set_text(`# Informações Gerais SMSM`)
+      .set_text(`# Informações Gerais saulomaia`)
     Jupyter.notebook.insert_cell_at_index('markdown', 1).set_text(`### Imports
 Import libraries and write settings here.`)
     // Define imports and settings
