@@ -4,7 +4,7 @@ define(['base/js/namespace', 'base/js/events'], function (Jupyter, events) {
     Jupyter.notebook.insert_cell_at_index('markdown', 0)
       .set_text(`# Informações Gerais
 Preencha as seguintes informações:`)
-    Jupyter.notebook.insert_cell_at_index('markdown', 1).set_text(`### Imports
+    Jupyter.notebook.insert_cell_at_index('markdown', 1).set_text(`### Importando bibliotecas
 Import libraries and write settings here.`)
     // Define imports and settings
     Jupyter.notebook.insert_cell_at_index('code', 2)
