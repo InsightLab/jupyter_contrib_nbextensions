@@ -4,13 +4,21 @@ define(['base/js/namespace', 'base/js/events'], function (Jupyter, events) {
     Jupyter.notebook.insert_cell_at_index('markdown', 0)
       .set_text(`# Informações Gerais')
     Jupyter.notebook.insert_cell_at_index('markdown', 1)
-      .set_text(`- Nome do desenvolvedor:
-- Data:
-- Projeto:
-- Aplicação:
-- Linguagem:
-- Resumo da aplicação:
-- Outras observações:')
+      .set_text(`# Informações Gerais
+- Nome do desenvolvedor: 
+    - 
+- Data: 
+    - 
+- Projeto: 
+    - 
+- Aplicação: 
+    - 
+- Linguagem: 
+    - 
+- Resumo da aplicação: 
+    - -
+- Outras observações: 
+    - -')
 
     Jupyter.notebook.insert_cell_at_index('markdown', 1).set_text(`### Imports
 Import libraries and write settings here.`)
@@ -68,7 +76,7 @@ Summarize findings here`)
   function load_ipython_extension () {
     // Add default cells for new notebook
     if (Jupyter.notebook.get_cells().length === 1) {
-      setTimeout(setUp, 500)
+      setTimeout(setUp, 2000)
     } else {
       promptName()
     }
