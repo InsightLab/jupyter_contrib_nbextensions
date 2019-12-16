@@ -4,7 +4,7 @@ define(['base/js/namespace', 'base/js/events'], function (Jupyter, events) {
     Jupyter.notebook.insert_cell_at_index('markdown', 0)
       .set_text(`# Informações Gerais')
     Jupyter.notebook.insert_cell_at_index('markdown', 1)
-      .set_text(`# Informações Gerais
+      .set_text(`
 - Nome do desenvolvedor: 
     - 
 - Data: 
