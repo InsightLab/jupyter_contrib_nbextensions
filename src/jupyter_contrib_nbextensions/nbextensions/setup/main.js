@@ -12,7 +12,7 @@ define(['base/js/namespace', 'base/js/events'], function (Jupyter, events) {
 - Linguagem:
 - Resumo da aplicação:`)
     Jupyter.notebook.insert_cell_at_index('markdown', 2).set_text(`# Importando bibliotecas
-Import libraries and write settings here.`)
+Importe as bibliotecas/packages.`)
     // Run all cells
     Jupyter.notebook.execute_all_cells()
   }
