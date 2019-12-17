@@ -2,16 +2,16 @@ define(['base/js/namespace', 'base/js/events'], function (Jupyter, events) {
   // Template cells including markdown and imports
   var setUp = function () {
     Jupyter.notebook.insert_cell_at_index('markdown', 0)
-      .set_text(`## Informações Gerais`)
+      .set_text(`# Informações Gerais`)
     Jupyter.notebook.insert_cell_at_index('markdown', 1)
-      .set_text(`### Preencha as seguintes informações:
+      .set_text(`## Preencha as seguintes informações:
 - Nome do desenvolvedor:
 - Projeto:
 - Aplicação:
 - Data:
 - Linguagem:
 - Resumo da aplicação:`)
-    Jupyter.notebook.insert_cell_at_index('markdown', 2).set_text(`## Importando bibliotecas
+    Jupyter.notebook.insert_cell_at_index('markdown', 2).set_text(`# Importando bibliotecas
 Import libraries and write settings here.`)
     // Run all cells
     Jupyter.notebook.execute_all_cells()
