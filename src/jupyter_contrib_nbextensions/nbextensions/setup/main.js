@@ -5,7 +5,7 @@ define(['base/js/namespace', 'base/js/events'], function (Jupyter, events) {
       .set_text(`# Informações Gerais`)
     Jupyter.notebook.insert_cell_at_index('markdown', 1)
       .set_text(`## Preencha as seguintes informações:
-- Nome do desenvolvedor:
+- Nome do desenvolvedor: SAULO MAIA
 - Projeto:
 - Aplicação:
 - Linguagem:
