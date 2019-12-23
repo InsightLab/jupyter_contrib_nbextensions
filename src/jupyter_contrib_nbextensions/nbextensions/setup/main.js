@@ -2,7 +2,8 @@ define(['base/js/namespace', 'base/js/events'], function (Jupyter, events) {
   // Template cells including markdown and imports
   var setUp = function () {
     Jupyter.notebook.insert_cell_at_index('markdown', 0)
-      .set_text(`# Informações Gerais`)
+      .set_text(`# Informações Gerais
+Dúvidas, críticas, sugestões, correções, etc -> email: insight_pim@insightlab.com`)
     Jupyter.notebook.insert_cell_at_index('markdown', 1)
       .set_text(`## Preencha as seguintes informações:
 - Descrição da aplicação:
