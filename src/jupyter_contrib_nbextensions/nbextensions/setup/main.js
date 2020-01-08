@@ -3,7 +3,7 @@ define(['base/js/namespace', 'base/js/events'], function (Jupyter, events) {
   var setUp = function () {
     Jupyter.notebook.insert_cell_at_index('markdown', 0)
       .set_text(`# Informações Gerais
-- Dúvidas, críticas, sugestões, correções, etc -> http://bit.ly/feedback-insight`)
+- Dúvidas, críticas, sugestões, correções, etc [Clique aqui !](http://bit.ly/feedback-insight)`)
     Jupyter.notebook.insert_cell_at_index('markdown', 1)
       .set_text(`## Preencha as seguintes informações:
 - Descrição da aplicação:
